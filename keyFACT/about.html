@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Award winning journalistic data investigation website on drugs, organised crime, cybersecurity and drones war.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>TheKeyFACT</title>
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <style>
+
+        * {
+        box-sizing: border-box;
+        }
+
+        .header {
+        background: black;
+        border: 1px solid none;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+        }
+
+        .bottom {
+        background: black;
+        border: 1px solid none;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+        }
+
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        [class*="col-"] {
+        float: left;
+        padding: 0px 15px 15px 0px;
+        }
+
+        /* For small mobile phones: */
+        @media only screen and (min-width: 0px) and (max-width: 599px){
+          [class*="col-"] {width: 100%;}
+          .hide_moto {display: none;}
+          .sub_head_ab {font-size: 18px; line-height: 22px;}
+          .head_side_ab {font-size: 18px; line-height: 22px;}
+          .sub_head {font-size: 16px; line-height: 16px;}
+          }
+
+            /* For large mobile screens: */
+        @media only screen and (min-width: 600px) and (max-width: 767px) {
+          .col-1 {width: 60%;}
+          .col-4 {width: 40%;}
+
+      }
+
+          /* For normal size tablet resizing: */
+      @media only screen and (min-width: 768px) and (max-width: 910px){
+          .col-1 {width: 60%;}
+          .col-4 {width: 40%;}
+
+      }
+
+          /* From iPad up to computer screen resizing: */
+      @media only screen and (min-width: 911px) and (max-width: 1439px){
+          .col-1 {width: 60%;}
+          .col-4 {width: 40%;}
+          }
+
+          /* For large desktop screen resizing: */
+      @media only screen and (min-width: 1440px){
+          .col-1 {width: 60%;}
+          .col-4 {width: 40%;}
+          }
+    </style>
+</head>
+
+<body class="background_pic">
+  <!-- Main website header and navigation -->
+  <header>
+    <div class="header">
+        <div id="nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a>Stories</a>
+                  <ul>
+                    <li><a href="post_page.html#section1">Drugs</a></li>
+  					        <li><a href="post_page.html#section5">WarLogs</a></li>
+                    <li><a href="post_page.html#section2">CyberSecurity</a></li>
+                  </ul>
+            </li>
+          </ul>
+        </div>
+            <div>
+            <a href="index.html" class="active"><img alt="Logo" src="pics/logo_2.png"></a>
+            </div>
+            <div class="top_right">
+              <!--Social Media buttons, not yeat linked to proper accounts-->
+              <ul class="share-buttons">
+              <li><a href="https://www.facebook.com" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons_front/Facebook.png" /></a></li>
+              <li><a href="https://twitter.com" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons_front/Twitter.png" /></a></li>
+              <li><a href="https://plus.google.com" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons_front/Google+.png" /></a></li>
+              <li><a href="http://www.linkedin.com" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons_front/LinkedIn.png" /></a></li>
+              <li><a href="http://wordpress.com" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons_front/Wordpress.png" /></a></li>
+              <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons_front/Email.png" /></a></li>
+              </ul>
+          </div>
+          <div class="bottom_right sub_head">
+          <p class="hide_moto">Award winning data investigations</p>
+          </div>
+        </div>
+  </header>
+
+<div class="row">
+  <div class="col-1 col-m-1 col-n-1 col-i-1">
+  </div>
+      <div class="col-4 col-m-4 col-n-4 col-i-4">
+          <div class="head_side_ab"><p><strong>What about us?</strong></p></div>
+            <div class="sub_head_ab">
+              <p><span>W</span>e are an award winning investigative reporting website with a strong commitment to uncover stories on cybersecurity, organised crime, money laundering, and the use of drones at war. We won the European Investigation Award with the best investigation prize going for our series on drones. We rely on donations and project sponsoring to do our work independently. If you want to donate, please use the <strong>Paypal</strong> Checkout button at the bottom of the page. Don't forget to subscribe to our <strong>Newsletter below</strong>.</p>
+            </div>
+            <form class="sub_head_ab" id="small">
+              Email:
+              <input type="text" name="email" value="Enter your email">
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+      </div>
+      <footer>
+          <div style="text-align:center;" class="bottom" id="paypal-button-container">
+            <p class="sub_head">If you value our work, please donate!<br>©Developed by Getulio Muniz. All rights reserved.</p>
+          </div>
+                <script>
+                   paypal.Button.render({
+                       env: 'sandbox', // sandbox | production
+                       // PayPal Client IDs - replace with your own
+                       // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+                       client: {
+                           sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+                           production: '<insert production client id>'
+                       },
+                       // Show the buyer a 'Pay Now' button in the checkout flow
+                       commit: true,
+                       // payment() is called when the button is clicked
+                       payment: function(data, actions) {
+                           // Make a call to the REST api to create the payment
+                           return actions.payment.create({
+                               payment: {
+                                   transactions: [
+                                       {
+                                           amount: { total: '0.01', currency: 'USD' }
+                                       }
+                                   ]
+                               }
+                           });
+                       },
+                       // onAuthorize() is called when the buyer approves the payment
+                       onAuthorize: function(data, actions) {
+                           // Make a call to the REST api to execute the payment
+                           return actions.payment.execute().then(function() {
+                               window.alert('Payment Complete!');
+                           });
+                       }
+                   }, '#paypal-button-container');
+             </script>
+      </footer>
+</body>
+</html>

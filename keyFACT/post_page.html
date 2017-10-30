@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Award winning journalistic data investigation website on drugs, organised crime, cybersecurity and drones war.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>TheKeyFACT</title>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <style>
+
+        * {
+        box-sizing: border-box;
+        }
+
+        .header {
+        background: black;
+        border: 1px solid none;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+        }
+
+        .bottom {
+        background: black;
+        border: 1px solid none;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+        }
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        [class*="col-"] {
+        float: left;
+        padding: 0px 15px 15px 0px;
+        }
+
+        /* For small mobile phones: */
+        @media only screen and (min-width: 0px) and (max-width: 599px){
+          [class*="col-"] {width: 100%;}
+          .hide_video {display: none;}
+          .hide {display: none;}
+          .hide_moto {display: none;}
+          .headline {font-size: 28px; line-height: 28px;}
+          .sub_head {font-size: 20px; line-height: 20px;}
+          .text_body {font-size: 16px; line-height: 16px;}
+          .sub_head {font-size: 16px; line-height: 16px;}
+          .text_side {padding-top: 0; font-size: 16px; line-height: 16px;}
+          .head_side {padding-top: 0; font-size: 16px; line-height: 25px;}
+          .hide{display: none;}
+          }
+
+            /* For large mobile screens: */
+        @media only screen and (min-width: 600px) and (max-width: 767px) {
+          .col-m-1 {width: 0%;}
+          .col-m-4 {width: 100%;}
+          .col-n-7 {width: 100%;}
+          .headline {font-size: 30px; line-height: 30px;}
+          .sub_head {font-size: 19px; line-height: 19px;}
+          .text_body {font-size: 16px; line-height: 16px;}
+          .text_side {padding-top: 0; font-size: 16px; line-height: 16px;}
+          .head_side {padding-top: 0; font-size: 16px; line-height: 25px;}
+          .hide{display: none;}
+      }
+
+          /* For normal size tablet resizing: */
+      @media only screen and (min-width: 768px) and (max-width: 910px){
+          .col-n-1 {width: 0%;}
+          .col-n-4 {width: 100%;}
+          .col-n-7 {width: 100%;}
+          .hide{display: none;}
+      }
+
+          /* From iPad up to computer screen resizing: */
+      @media only screen and (min-width: 911px) and (max-width: 1439px){
+          .col-i-1 {width: 0%;}
+          .col-i-4 {width: 100%;}
+          .col-i-7 {width: 100%;}
+          .hide{display: none;}
+          }
+
+          /* For large desktop screen resizing: */
+      @media only screen and (min-width: 1440px){
+          .col-1 {width: 8.33%;}
+          .col-4 {width: 33.33%;}
+          .col-7 {width: 58.33%;}
+          }
+    </style>
+</head>
+
+<body>
+  <!-- Main website logo and Menu -->
+  <header>
+    <div class="header">
+        <div id="nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a>Stories</a>
+                  <ul>
+                    <li><a href="post_page.html#section1">Drugs</a></li>
+  					        <li><a href="post_page.html#section5">WarLogs</a></li>
+                    <li><a href="post_page.html#section2">CyberSecurity</a></li>
+                  </ul>
+            </li>
+          </ul>
+        </div>
+            <div>
+            <a href="index.html" class="active"><img alt="Logo" src="pics/logo_2.png"></a>
+            </div>
+            <div class="top_right">
+              <!--Social Media buttons, not yeat linked to proper accounts-->
+              <ul class="share-buttons">
+                <li><a href="https://www.facebook.com" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons_front/Facebook.png" /></a></li>
+                <li><a href="https://twitter.com" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons_front/Twitter.png" /></a></li>
+                <li><a href="https://plus.google.com" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons_front/Google+.png" /></a></li>
+                <li><a href="http://www.linkedin.com" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons_front/LinkedIn.png" /></a></li>
+                <li><a href="http://wordpress.com" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons_front/Wordpress.png" /></a></li>
+                <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons_front/Email.png" /></a></li>
+              </ul>
+          </div>
+          <div class="bottom_right sub_head">
+          <p class="hide_moto">Award winning data investigations</p>
+          </div>
+        </div>
+  </header>
+
+
+<div class="row">
+    <div class="col-1 col-m-1 col-n-1 col-i-1">
+    </div>
+          <!--Headline-->
+    <div class="col-7 col-m-7 col-n-7 col-i-7">
+        <article id="section1">
+            <p class ="date">Wed, 28.10.17</p>
+            <h1 class="headline">Drug mules: Europe seizes more than 30t of 'swallowed' cocaine per year</h1>
+            <h2 class="sub_head"> <strong>TheKeyFact</strong> investigates the numbers and the routes taken by those who risk their lives in transatlantic flights with more than 1k of drugs in their stomachs</h2>
+            <img src="pics/guarulhos.jpg" style="width:100%;height:auto" alt="Guarulhos Airport/Pedro Vasconcelos">
+            <!--Share Buttons-->
+          <ul class="share-buttons">
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+            <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+            <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+          </ul>
+          <!--Main article-->
+          <div class="text_body">
+            <p><span>G</span>rowing up, one of my cousins spent some time working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+            </p>
+
+            <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+            </p>
+
+            <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+            </p>
+
+            <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+            </p>
+        </div>
+      </article>
+    </div>
+    <!--Right panel with external links-->
+      <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+          <div class="head_side"><p><strong>We recommend</strong></p></div>
+            <div class="text_side">
+              <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+              <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+              ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+              ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+              <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+              <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+            </div>
+          </div>
+          <div class="quote hide">
+            <p><span>"</span>What's so special about swallowing balloons filled with coke?</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1 col-m-1 col-n-1 col-i-1"></div>
+              <!--Headline-->
+          <div class="col-7 col-m-7 col-n-7 col-i-7">
+            <article id="section2">
+              <p class ="date">Wed, 20.10.17</p>
+              <h1 class="headline">Google surveillance project using personal data to be banned in the US</h1>
+              <h2 class="sub_head"> <strong>TheKeyFact</strong> investigates what lies behind the biggest data project in history, which may well include details of over 1b customers</h2>
+              <img src="pics/deep_mind.jpg" style="width:100%;height:auto" alt="Deep Mind/Google Courtesy">
+                <!--Share Buttons-->
+                <ul class="share-buttons">
+                  <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+                  <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+                  <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+                  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+                  <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+                  <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+                </ul>
+                <!--Main article-->
+                <div class="text_body">
+                  <p><span>O</span>ne of my cousins spent some time working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+                  </p>
+
+                  <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+                  </p>
+
+                  <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+                  </p>
+
+                  <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+                  </p>
+                </div>
+              </article>
+            </div>
+          <!--Right panel with external links-->
+            <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+                <div class="head_side"><p><strong>We recommend</strong></p></div>
+                  <div class="text_side">
+                    <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+                    <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+                    ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+                    ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+                    <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+                    <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+                  </div>
+              </div>
+                <div class="quote hide">
+                  <p><span>"</span>This may be the biggest threat to personal data.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 col-m-1 col-n-1 col-i-1"></div>
+                      <!--Headline-->
+                <div class="col-7 col-m-7 col-n-7 col-i-7">
+                    <article id="section3">
+                      <p class ="date">Wed, 11.10.17</p>
+                      <h1 class="headline">Python investigation using ML shows how big is the Bitcoin financial market</h1>
+                      <h2 class="sub_head"> <strong>TheKeyFact</strong> investigates the numbers behing the capital flow in the Bitcoin market seeping through thousand of transactions</h2>
+                      <img src="pics/bitcoin.jpg" style="width:100%;height:auto" alt="Bitcoin/Reuters">
+                          <!--Share Buttons-->
+                      <ul class="share-buttons">
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+                        <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+                        <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+                        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+                        <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+                        <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+                      </ul>
+                      <!--Main article-->
+                      <div class="text_body">
+                        <p><span>G</span>rowing up, one of my cousins spent some time working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+                        </p>
+
+                        <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+                        </p>
+
+                        <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+                        </p>
+
+                        <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+                        </p>
+                    </div>
+                  </article>
+                </div>
+                <!--Right panel with external links-->
+                  <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+                    <div class="head_side"><p><strong>We recommend</strong></p></div>
+                      <div class="text_side">
+                        <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+                        <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+                        ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+                        ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+                        <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+                        <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+                      </div>
+                      </div>
+                      <div class="quote hide">
+                        <p><span>"</span>The sheer scale of Bitcoin is showed by our technique.</p>
+                      </div>
+                  </div>
+
+            <div class="row">
+                <div class="col-1 col-m-1 col-n-1 col-i-1"></div>
+                    <!--Headline-->
+                <div class="col-7 col-m-7 col-n-7 col-i-7">
+                    <article  id="section4">
+                      <p class ="date">Wed, 25.09.17</p>
+                      <h1 class="headline">São Paulo airport brought to a halt after algorithm overbooks 40% of flights</h1>
+                      <h2 class="sub_head"> <strong>TheKeyFact</strong> discovered that major flight operators are using the same booking system to manage seats occupancy; Problem may be caused by probability proxies</h2>
+                      <img src="pics/guarulhos_airport.jpeg" style="width:100%;height:auto" alt="Guarulhos Airport/Pedro Vasconcelos">
+                    <!--Share Buttons-->
+                      <ul class="share-buttons">
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+                        <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+                        <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+                        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+                        <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+                        <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+                      </ul>
+                      <!--Main article-->
+                      <div class="text_body">
+                        <p><span>C</span>ousins spent some time working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+                        </p>
+
+                        <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+                        </p>
+
+                        <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+                        </p>
+
+                        <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+                      </p>
+                    </div>
+                  </article>
+              </div>
+                <!--Right panel with external links-->
+                  <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+                      <div class="head_side"><p><strong>We recommend</strong></p></div>
+                        <div class="text_side">
+                          <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+                          <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+                          ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+                          ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+                          <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+                          <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+                        </div>
+                      </div>
+                      <div class="quote hide">
+                        <p><span>"</span>More than 90% of flights in Brazil uses same algorithm.</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-m-1 col-n-1 col-i-1"></div>
+                          <!--Headline-->
+                      <div class="col-7 col-m-7 col-n-7 col-i-7">
+                          <article id="section5">
+                            <p class ="date">Wed, 09.09.17</p>
+                            <h1 class="headline">Iraq Logs: number of civilian casualties rise 58% since last year, shows data</h1>
+                            <h2 class="sub_head"> <strong>TheKeyFact</strong> investigates the numbers behind the latest release on war logs</h2>
+                            <img src="pics/iraq.jpg" style="width:100%;height:auto" alt="Iraq/Reuters">
+                              <!--Share buttons-->
+                            <ul class="share-buttons">
+                              <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+                              <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+                              <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+                              <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+                              <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+                              <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+                            </ul>
+                            <!--Main article-->
+                            <div class="text_body">
+                              <p><span>S</span>pent some time working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+                              </p>
+
+                              <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+                              </p>
+
+                              <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+                              </p>
+
+                              <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                      <!--Right panel with external links-->
+                        <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+                            <div class="head_side"><p><strong>We recommend</strong></p></div>
+                              <div class="text_side">
+                                <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+                                <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+                                ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+                                ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+                                <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+                                <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+                              </div>
+                            </div>
+                            <div class="quote hide">
+                              <p><span>"</span>War in Iraq has more deaths of civilians than officials say.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 col-m-1 col-n-1 col-i-1"></div>
+                                <!--Headline-->
+                            <div class="col-7 col-m-7 col-n-7 col-i-7">
+                                <article id="section6">
+                                  <p class ="date">Wed, 10.07.17</p>
+                                  <h1 class="headline">Immigration from Syria is in decline, shows new data analysis by theKeyFact</h1>
+                                  <h2 class="sub_head"> <strong>TheKeyFact</strong> analyses the numbers and the routes taken by Syrian refugees since the last mass immigration flow in December</h2>
+                                  <img src="pics/syria.jpg" style="width:100%;height:auto" alt="Syrian War/Reuters">
+                                  <!--Share Buttons-->
+                                  <ul class="share-buttons">
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+                                    <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+                                    <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+                                    <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+                                    <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+                                    <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+                                  </ul>
+                                  <!--Main article-->
+                                  <div class="text_body">
+                                    <p><span>T</span>ime working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+                                    </p>
+
+                                    <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+                                    </p>
+
+                                    <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+                                    </p>
+
+                                    <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+                                    </p>
+                                  </div>
+                                </article>
+                            </div>
+                            <!--Right panel with external links-->
+                              <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+                                  <div class="head_side"><p><strong>We recommend</strong></p></div>
+                                    <div class="text_side">
+                                      <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+                                      <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+                                      ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+                                      ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+                                      <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+                                      <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+                                    </div>
+                                  </div>
+                                  <div class="quote hide">
+                                    <p><span>"</span>Number of Syrian refugees coming to Europe is declining</p>
+                                  </div>
+                                </div>
+
+                                    <div class="row">
+                                        <div class="col-1 col-m-1 col-n-1 col-i-1"></div>
+                                            <!--Headline-->
+                                        <div class="col-7 col-m-7 col-n-7 col-i-7">
+                                          <article  id="section7">
+                                              <p class ="date">Wed, 24.10.17</p>
+                                              <h1 class="headline">Catalonia separatist movement is gaining strenght among the youth, shows data</h1>
+                                              <h2 class="sub_head"> <strong>TheKeyFact</strong> analyses the trends and the scale of the latest disruption in Spain</h2>
+                                              <img src="pics/protest.jpg" style="width:100%;height:auto" alt="Catalonia/Ruters">
+
+                                              <ul class="share-buttons">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="pics/simple_icons/Facebook.png" /></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="pics/simple_icons/Twitter.png" /></a></li>
+                                                <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="pics/simple_icons/Google+.png" /></a></li>
+                                                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="pics/simple_icons/LinkedIn.png" /></a></li>
+                                                <li><a href="http://wordpress.com/press-this.php?u=&t=&s=" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="pics/simple_icons/Wordpress.png" /></a></li>
+                                                <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email" src="pics/simple_icons/Email.png" /></a></li>
+                                              </ul>
+                                              <!--Main article-->
+                                            <div class="text_body">
+                                              <p><span>G</span>rowing up, one of my cousins spent some time working as a drug mule. She's flown from Curacao to Europe with her stomach packed full of plastic-wrapped cocaine, transported briefcases full of drugs from Jamaica and only really stopped because she got caught doing it.
+                                              </p>
+
+                                              <p>"I don't get what's so special about swallowing balloons filled with coke," she said. Sharon, who is half-Dutch and half-Surinamese, grew up in a very small town, but started hanging out on the streets of Amsterdam when she was 13 years old. "There were only Dutch people where I was living. I hated it. I wanted to hang out with people who looked like me."
+                                              </p>
+
+                                              <p>In 2001, after being released from prison, Sharon travelled to the small Caribbean island of Curacao because she'd heard that smuggling cocaine through there was easy. The plan was for her to pick up a suitcase filled with coke just past customs, and then turn around and immediately fly back to the Netherlands with it.
+                                              </p>
+
+                                              <p>Obviously, Sharon was an easy target: she wasn't from Curacao and had no family there. "A lot of people would ask you to smuggle for them if they knew you were Dutch. But I always told them that I wouldn't. Well, until I ran into a friend that I knew from back home," Sharon shrugged. "She asked me if I would smuggle some stuff for her and I decided to do it. Everybody did it back then.
+                                              </p>
+                                            </div>
+                                            </article>
+                                          </div>
+                                        <!--Right panel with external links-->
+                                          <div class="col-4 col-m-4 col-n-4 col-i-4 text_side">
+                                              <div class="head_side"><p><strong>We recommend</strong></p></div>
+                                                <div class="text_side">
+                                                  <a href="https://www.bellingcat.com/"><p>Bellingcat</p></a>
+                                                  <a href="https://www.revealnews.org/"><p>Reveal News</p></a>
+                                                  ​<a href="https://www.tcij.org/"><p>CTIJ Centre for<br>Investigative Journalism</p></a>
+                                                  ​<a href="http://compj.cs.cf.ac.uk/"><p>Data Journalism<br>@ Cardiff</p></a>
+                                                  <a href="https://www.occrp.org/en"><p>Organised Crime and<br>Corruption Reporting Project</p></a>
+                                                  <a href="https://gijn.org/"><p>Global Investigative<br>Journalism Network</p></a>
+                                                </div>
+                                              </div>
+                                              <div class="quote hide">
+                                                <p><span>"</span>Catalonia has more young people in favour of separatism </p>
+                                              </div>
+                                            </div>
+
+      <footer>
+          <div style="text-align:center;" class="bottom" id="paypal-button-container">
+            <p class="sub_head">If you value our work, please donate!<br>©Developed by Getulio Muniz. All rights reserved.</p>
+          </div>
+                <script>
+                   paypal.Button.render({
+                       env: 'sandbox', // sandbox | production
+                       // Script from PayPal: https://developer.paypal.com/developer/applications/create
+                       client: {
+                           sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+                           production: '<insert production client id>'
+                       },
+                       // Show the buyer a 'Pay Now' button in the checkout flow
+                       commit: true,
+                       // payment() is called when the button is clicked
+                       payment: function(data, actions) {
+                           // Make a call to the REST api to create the payment
+                           return actions.payment.create({
+                               payment: {
+                                   transactions: [
+                                       {
+                                           amount: { total: '0.01', currency: 'USD' }
+                                       }
+                                   ]
+                               }
+                           });
+                       },
+                       // onAuthorize() is called when the buyer approves the payment
+                       onAuthorize: function(data, actions) {
+                           // Make a call to the REST api to execute the payment
+                           return actions.payment.execute().then(function() {
+                               window.alert('Payment Complete!');
+                           });
+                       }
+                   }, '#paypal-button-container');
+             </script>
+      </footer>
+</body>
+</html>
